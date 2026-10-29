@@ -12,6 +12,17 @@ def high_and_low(numbers):
             product *=int(digit)
             n = product
             count += 1
+             #задача 3/get the midle character
+def get_middle(s):
+    length = len(s)
+    if length == 0:
+        return ""
+    
+    mid = length // 2
+    if length % 2 == 0:
+        return s[mid - 1 : mid + 1]
+    else:
+        return s[mid]
    #задача 4/unique_in_order
 def unique_in_order(sequence):
     result = []
